@@ -1,0 +1,7 @@
+img/
+tailwind/
+package-lock.json
+package.json
+tailwind.css
+tailwind.config.js
+node_modules
