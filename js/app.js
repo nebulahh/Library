@@ -14,21 +14,22 @@ function bringOutForm() {
 // Library
 let myLibrary = [];
 
-// book constructor
-function Book(author, title, pages, readStatus) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.readStatus = readStatus;
-}
-
-Book.prototype.changeStatus = function () {
-  if (this.readStatus === 'Not read') {
-    this.readStatus = 'Read';
-  } else {
-    this.readStatus = 'Not read';
+class Book {
+  constructor(author, title, pages, readStatus) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.readStatus = readStatus;
   }
-};
+
+  changeStatus() {
+    if (this.readStatus === 'Not read') {
+      this.readStatus = 'Read';
+    } else {
+      this.readStatus = 'Not read';
+    }
+  }
+}
 
 // let book = new Book();
 
